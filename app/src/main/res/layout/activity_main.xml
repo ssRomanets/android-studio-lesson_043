@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/newContactNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"/>
+
+    <EditText
+        android:id="@+id/newContactPhoneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone"/>
+
+    <Button
+        android:id="@+id/addBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Добавить"/>
+
+    <TextView
+        android:id="@+id/headerTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Контакты"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"/>
+
+    <ListView
+        android:id="@+id/listViewLV"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintVertical_bias="1"
+        tools:listitem="@layout/list_item"/>
+
+</LinearLayout>
